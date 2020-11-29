@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.dark-mode body {
+  @apply bg-dark text-dark-primary;
+}
+
+.light-mode body {
+  @apply bg-light;
+}
+
+.light-mode .nuxt-link-exact-active {
+  @apply text-light-primary;
+}
+
+.dark-mode .nuxt-link-exact-active {
+  @apply text-dark-primary;
+}
+
+.light-mode .nuxt-link-active {
+  @apply text-light-primary;
+}
+
+.dark-mode .nuxt-link-active {
+  @apply text-dark-primary;
+}
+
+.light-mode .fill-accent {
+  fill: #ff8626;
+}
+
+.dark-mode .fill-accent {
+  fill: #3adbb9;
+}
+
+.light-mode .fill-logo {
+  fill: #ff8626;
+}
+
+.dark-mode .fill-logo {
+  fill: #d0fff9;
+}
+
+.light-mode .fill-eyes {
+  fill: #ff8626;
+}
+
+.dark-mode .fill-eyes {
+  fill: #3adbb9;
+}
