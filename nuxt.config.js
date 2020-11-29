@@ -1,12 +1,16 @@
 export default {
-  ssr: false,
+  target: 'server',
+  ssr: true,
 
   head: {
+    htmlAttrs: {
+      lang: 'es'
+    },
     title: 'k-menus',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'k-menus', name: 'App for create Menus', content: 'App for create Menus' }
+      { hid: 'k-menu', name: 'k-menu', content: 'Aplicación para crear Menús' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -23,7 +27,8 @@ export default {
 
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome'
   ],
 
   modules: [
@@ -34,5 +39,12 @@ export default {
   axios: {},
 
   build: {
+  },
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true,
+      regular: true
+    }
   }
 }
