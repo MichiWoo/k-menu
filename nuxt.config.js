@@ -28,8 +28,8 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/fontawesome',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/fontawesome'
   ],
 
   modules: [
@@ -40,6 +40,12 @@ export default {
   axios: {},
 
   build: {
+  },
+  tailwindcss: {
+    exposeConfig: true
+  },
+  purgeCSS: {
+    whitelist: ['dark-mode']
   },
   fontawesome: {
     icons: {
