@@ -1,6 +1,6 @@
 <template lang="pug">
 nuxt-link(:to="linkTo")
-  button(class="p-3 bg-red-400 border-red-600 rounded-lg text-white hover:bg-yellow-500 hover:ring-2 hover:ring-yellow-500 hover:ring-opacity-50")
+  button(class="p-3 bg-light-primary dark:bg-dark-primary border-light-accent dark:border-text-dark-accent rounded-lg text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50")
     | {{ text }}
 </template>
 
