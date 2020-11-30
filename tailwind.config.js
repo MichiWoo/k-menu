@@ -12,10 +12,10 @@ module.exports = {
       },
       dark: {
         default: '#252e42',
-        primary: '#2a98db',
-        secondary: '#1d6b99',
-        accent: '#cbecff',
-        danger: '#98d8ff',
+        primary: '#09e1fd',
+        secondary: '#06a6b1',
+        accent: '#c2fbff',
+        danger: '#84f7ff',
         text: '#ebf1f4'
       }
     }

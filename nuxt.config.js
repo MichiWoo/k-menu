@@ -53,5 +53,6 @@ export default {
       brands: true,
       regular: true
     }
-  }
+  },
+  telemetry: false
 }
