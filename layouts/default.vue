@@ -1,7 +1,7 @@
 <template lang="pug">
   div.flex.flex-col.h-screen
     Header
-    div(class="divide-y divide-light-text dark:divide-dark-accent")
+    div(class="divide-y divide-light-primary dark:divide-dark-accent")
       Nuxt
       Footer
 </template>

@@ -5,15 +5,20 @@
         | ¡Hola, que bueno verte de nuevo!
       h4(class="text-light-text dark:text-dark-accent")
         | Coloca tus datos para ingresar a la aplicación
-      div.py-6.flex.items-center.justify-center
+      div.py-2.flex.items-center.justify-center
         Input(placeholder="Usuario" typeInput="text")
+      div.py-2.flex.items-center.justify-center
+        Input(placeholder="******" typeInput="password")
+      div.py-2.flex.items-center.justify-center
+        Button(linkTo="/" text="Login")
 </template>
 
 <script>
 export default {
   name: 'Login',
   components: {
-    Input: () => import('../components/Input')
+    Input: () => import('../components/Input'),
+    Button: () => import('../components/Button')
   }
 }
 </script>

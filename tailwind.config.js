@@ -3,12 +3,13 @@ module.exports = {
     darkSelector: '.dark-mode',
     colors: {
       light: {
-        default: '#ebf1f4',
+        default: '#fdfafa',
         primary: '#FF8626',
         secondary: '#2693ff',
         accent: '#1b67b3',
         danger: '#ffd826',
-        text: '#252e42'
+        text: '#252e42',
+        transparent: 'transparent'
       },
       dark: {
         default: '#252e42',
@@ -16,7 +17,8 @@ module.exports = {
         secondary: '#06a6b1',
         accent: '#c2fbff',
         danger: '#84f7ff',
-        text: '#ebf1f4'
+        text: '#ebf1f4',
+        transparent: 'transparent'
       }
     }
   },
@@ -24,6 +26,7 @@ module.exports = {
     backgroundColor: [
       'dark',
       'dark-hover',
+      'dark-focus',
       'dark-group-hover',
       'dark-even',
       'dark-odd',
@@ -31,7 +34,8 @@ module.exports = {
       'responsive',
       'group-hover',
       'even',
-      'odd'
+      'odd',
+      'focus'
     ],
     borderColor: [
       'dark',
@@ -41,11 +45,14 @@ module.exports = {
       'dark-focus-within',
       'hover',
       'responsive',
-      'group-hover'
+      'group-hover',
+      'focus'
     ],
-    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'group-hover'],
+    textColor: ['focus', 'dark', 'dark-hover', 'dark-focus', 'dark-active', 'hover', 'responsive', 'group-hover'],
     gradientColorStops: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'group-hover'],
-    divideColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'group-hover']
+    divideColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'group-hover'],
+    ringColor: ['focus', 'dark', 'dark-hover', 'dark-focus', 'dark-active', 'hover', 'responsive', 'group-hover'],
+    ringWidth: ['focus', 'dark', 'dark-hover', 'dark-focus', 'dark-active', 'hover', 'responsive', 'group-hover']
   },
   plugins: [require('tailwindcss-dark-mode')()],
   purge: [
